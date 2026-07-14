@@ -1,0 +1,23 @@
+nav ul {
+    list-style-type: none;
+    background-color: #1B2A4A;
+    padding: 10px;
+}
+nav li { display: inline-block; }
+nav a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}   
+table { border-collapse: collapse; }
+th, td { border: 1px solid #444;
+padding: 8px; }
+body { font-family: Arial; }
+nav a:hover {
+background: #F2A33C;
+}
+.card:hover {
+    box-shadow: 6px 6px
+    14px #999;
+transition: 0.3s;
+}
