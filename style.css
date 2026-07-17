@@ -21,3 +21,11 @@ background: #F2A33C;
     14px #999;
 transition: 0.3s;
 }
+
+.products {
+    display: flex;
+    gap: 20px;
+}
+.productt {
+    width: 200px;
+}
