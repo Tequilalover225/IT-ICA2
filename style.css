@@ -1,3 +1,12 @@
+.page-title {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+
 nav ul {
     list-style-type: none;
     background-color: #1B2A4A;
@@ -8,6 +17,7 @@ nav a {
     color: white;
     padding: 8px 16px;
     text-decoration: none;
+
 }   
 table { border-collapse: collapse; }
 th, td { border: 1px solid #444;
@@ -16,6 +26,21 @@ body { font-family: Arial; }
 nav a:hover {
 background: #F2A33C;
 }
+
+.caption {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+nav li { display: inline-block; }
+nav a {
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+}   
+
 .card:hover {
     box-shadow: 6px 6px
     14px #999;
@@ -24,11 +49,13 @@ transition: 0.3s;
 
 .products {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 175px;
 }
-.productt {
-    width: 200px;
+.product {
+    width: 220px;
 }
+
 img {
     width: 150px;
     height: 150px;
@@ -40,4 +67,19 @@ img {
     font-style: italic;
     text-align: center;
     margin-top: 20px;
+}
+
+.add-cart {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.add-cart:hover {
+    background-color: #1e1861;
 }
