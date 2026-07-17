@@ -1,11 +1,9 @@
-.page-title {
+.category-title {
     text-align: center;
-    font-size: 14px;
-    color: #666;
-    margin-top: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 40px 0;
 }
-
-
 
 
 nav ul {
