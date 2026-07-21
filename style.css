@@ -6,26 +6,42 @@
 }
 
 
-nav ul {
-    list-style-type: none;
+nav {
     background-color: #1B2A4A;
-    padding: 10px;
 }
-nav li { display: inline-block; }
-nav a {
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
 
-}   
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #F2A33C;
+}
+
+
 
 table { border-collapse: collapse; }
 th, td { border: 1px solid #444;
 padding: 8px; }
 body { font-family: Arial; }
-nav a:hover {
-background: #F2A33C;
-}
+
+
+
 
 .caption {
     text-align: center;
@@ -34,31 +50,24 @@ background: #F2A33C;
     margin-top: 10px;
 }
 
-nav li { display: inline-block; }
-nav a {
-    color: rgb(255, 255, 255);
-    padding: 8px 16px;
-    text-decoration: none;
-}   
 
-.card:hover {
-    box-shadow: 6px 6px
-    14px #999;
-transition: 0.3s;
-}
 
 .products {
     display: flex;
     flex-wrap: wrap;
-    gap: 175px;
+    justify-content: center;
+    gap: 30px;
 }
+
 .product {
     width: 220px;
 }
 
+
 img {
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 
 .disclaimer {
@@ -80,6 +89,7 @@ img {
     margin-top: 10px;
 }
 
-.add-cart:hover {
-    background-color: #1e1861;
+.add-cart:hover{
+    background-color:#1e1861;
+    transition:0.3s;
 }
