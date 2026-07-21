@@ -1,3 +1,5 @@
+/* Roshan Burgers - style.css */
+
 .category-title {
     text-align: center;
     font-size: 48px;
@@ -5,7 +7,7 @@
     margin: 40px 0;
 }
 
-
+/* Header & nav */
 nav {
     background-color: #1B2A4A;
 }
