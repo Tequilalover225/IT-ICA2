@@ -18,8 +18,8 @@
         <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="about.html" class="active">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html" class=>About Us</a></li>
+           <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul>
     </nav> 
      <p>
@@ -31,5 +31,42 @@
      <p>+65 1234 5678</p>
      <h2>Address</h2>
      <p>123 Example Street<br>Singapore 123456</p>
-    </main>
+<!-- Feedback Form -->
+        <h2>Feedback Form</h2>
+
+        <p>
+            We value your feedback. Let us know how we can improve our burgers
+            and services.
+        </p>
+        <form>
+        <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="burger">Favourite Burger:</label><br>
+            <input type="text" id="burger" name="burger"><br><br>
+            <label for="rating">How would you rate our service?</label><br>
+            <select id="rating" name="rating">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Your Feedback:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+            <br><br>
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Roshan Burgers. All rights reserved.</p>
+    </footer>
     </body>
