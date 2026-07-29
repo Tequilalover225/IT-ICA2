@@ -2,26 +2,43 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-         content="width=device-width,
-          initial-scale=1.0">
-         <title> Thank You | Roshan Burgers</title>
-         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thank You | Roshan Burgers</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-         <img src="images/roshanburgers.jpg" class="logo" alt="Roshan Burgers">
+        <img src="images/roshanburgers.jpg" class="logo" alt="Roshan Burgers">
         <!-- Logo generated using ChatGPT (OpenAI) -->
-        <h1>Thank You!</h1>
-
-    <p>We appreciate your feedback and will use it to improve our burgers and service.</p>
         
-            <nav>
-        <ul>
-            <li><a href="home.html">Back to Home</a></li>
-            <li><a href="contact.html">Back to Contact Us</a></li>
-         <ul>
-             <nav>
-            
-</body>
-</html>        
+        <h1>Thank You!</h1>
+        
+        <!-- This paragraph will be dynamically updated by the script below -->
+        <p id="summary">We appreciate your feedback and will use it to improve our burgers and service.</p>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Back to Home</a></li>
+                <li><a href="contact.html">Back to Contact Us</a></li>
+            </ul>
+        </nav>
 
+        <script>
+            // 1. Grab everything after the ? in the address bar
+            const data = new URLSearchParams(window.location.search);
+
+            // 2. Pull out the values using your exact form field names
+            const name   = data.get("name")   || "there";
+            const burger = data.get("burger") || "burger";
+            const rating = data.get("rating") || "feedback";
+
+            // 3. Build a friendly sentence and drop it into the summary box
+            const box = document.getElementById("summary");
+            if (data.toString() === "") {
+                // Page opened directly, with no form data in the URL
+                box.textContent = "Tip: submit the order form to see your order appear here.";
+            } else {
+                box.textContent = `Thanks ${name}! We received your order for a ${burger} and your ${rating} rating. We appreciate your feedback! 🍔`;
+            }
+        </script>
+    </body>
+</html>
