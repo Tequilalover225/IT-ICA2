@@ -12,7 +12,6 @@
         
         <h1>Thank You!</h1>
         
-        <!-- This paragraph will be dynamically updated by the script below -->
         <p id="summary">We appreciate your feedback and will use it to improve our burgers and service.</p>
         
         <nav>
@@ -22,23 +21,4 @@
             </ul>
         </nav>
 
-        <script>
-            // 1. Grab everything after the ? in the address bar
-            const data = new URLSearchParams(window.location.search);
-
-            // 2. Pull out the values using your exact form field names
-            const name   = data.get("name")   || "there";
-            const burger = data.get("burger") || "burger";
-            const rating = data.get("rating") || "feedback";
-
-            // 3. Build a friendly sentence and drop it into the summary box
-            const box = document.getElementById("summary");
-            if (data.toString() === "") {
-                // Page opened directly, with no form data in the URL
-                box.textContent = "Tip: submit the order form to see your order appear here.";
-            } else {
-                box.textContent = `Thanks ${name}! We received your order for a ${burger} and your ${rating} rating. We appreciate your feedback! 🍔`;
-            }
-        </script>
-    </body>
 </html>
