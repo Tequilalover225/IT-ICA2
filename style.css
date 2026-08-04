@@ -256,46 +256,35 @@ body { font-family: Arial; }
     border-radius:10px;
 }
 
-.checkout h3{
-    margin-top:20px;
+.checkout label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
-.checkout input[type="text"],
-.checkout input[type="tel"],
-.checkout textarea,
-.checkout select{
-
-    width:100%;
-    padding:12px;
-    margin-top:10px;
-    margin-bottom:20px;
-
-    border:1px solid #ccc;
-    border-radius:8px;
-
-    font-size:16px;
-
-    box-sizing:border-box;
+.checkout input,
+.checkout select,
+.checkout textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-.checkout textarea{
-    resize:vertical;
+.checkout input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
 }
 
-.checkout hr{
-
-    margin:30px 0;
-
-    border:none;
-
-    border-top:1px solid #ccc;
-}
-
-.checkout button{
-
-    display:block;
-
-    margin:auto;
+.payment-note {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 /* ===========================
