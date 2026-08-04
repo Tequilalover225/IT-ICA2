@@ -211,5 +211,76 @@ body { font-family: Arial; }
 
 }
 
-/* Checkout Page */
+/* ===========================
+   Checkout Page
+=========================== */
+
+.checkout{
+    max-width:900px;
+    margin:40px auto;
+    padding:40px;
+    background:#f5f5f5;
+    border-radius:15px;
+}
+
+.checkout h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.selected-burger{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.selected-burger img{
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.checkout h3{
+    margin-top:20px;
+}
+
+.checkout input[type="text"],
+.checkout input[type="tel"],
+.checkout textarea,
+.checkout select{
+
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+}
+
+.checkout textarea{
+    resize:vertical;
+}
+
+.checkout hr{
+
+    margin:30px 0;
+
+    border:none;
+
+    border-top:1px solid #ccc;
+}
+
+.checkout button{
+
+    display:block;
+
+    margin:auto;
+}
 
