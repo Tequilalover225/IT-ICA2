@@ -147,45 +147,56 @@ required>
 <h3>Payment Method</h3>
 
 <label>
-<input type="radio" name="payment" required>
-Cash
+    <input type="radio" name="payment" value="card" required>
+    Credit / Debit Card
 </label><br>
 
 <label>
-<input type="radio" name="payment">
-Visa
+    <input type="radio" name="payment" value="paynow">
+    PayNow
 </label><br>
 
-<label>
-<input type="radio" name="payment">
-Mastercard
-</label><br>
 
-<label>
-<input type="radio" name="payment">
-PayNow
-</label>
+<hr>
 
-<br><br>
+<h3>Card Details</h3>
 
-<button class="add-cart" type="submit">
-Place Order
-</button>
+<label for="cardname">Name on Card</label>
+<input type="text" 
+       id="cardname"
+       name="cardname"
+       placeholder="John Tan"
+       required>
 
-</form>
+<label for="cardnumber">Card Number</label>
+<input type="text"
+       id="cardnumber"
+       name="cardnumber"
+       placeholder="1234 5678 9012 3456"
+       maxlength="19"
+       required>
 
-</section>
+<label for="expiry">Expiry Date</label>
+<input type="month"
+       id="expiry"
+       name="expiry"
+       required>
 
-</main>
+<label for="cvv">CVV</label>
+<input type="password"
+       id="cvv"
+       name="cvv"
+       maxlength="4"
+       placeholder="123"
+       required>
 
-<footer>
-
-<p class="disclaimer">
-© 2026 Roshan Burgers. Thank you for choosing us!
+<p class="disclaimer">Disclaimer:
+    Demo website for educational purposes only.
+    Please do not enter real credit card information.
 </p>
 
-</footer>
-
+<button class="add-cart" type="submit">
+    Place Order
+</button>
 </body>
 </html>
-
