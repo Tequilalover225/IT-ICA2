@@ -56,7 +56,7 @@ padding: 8px; }
 body { font-family: Arial; }
 
 
-
+/* Caption for images */
 
 .caption {
     text-align: center;
@@ -80,12 +80,14 @@ body { font-family: Arial; }
 }
 
 
-img {
-    width: 150px;
-    height: 150px;
+.product img {
+    width: 180px;
+    height: 180px;
     object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
-
 
 
 /*disclaimer for images*/
@@ -136,21 +138,7 @@ img {
 
 /* About Us section */
 /* i used AI to assist brainstorm ideas */
-.hero {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-}
 
-.hero-text {
-    flex: 1;
-}
-
-.hero img {
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
-}
 .hero {
     display: flex;
     align-items: center;
@@ -162,19 +150,27 @@ img {
     border-radius: 15px;
 }
 
+
+
 .hero-text {
     flex: 1;
 }
+
+
 
 .hero h2 {
     font-size: 32px;
     margin-bottom: 15px;
 }
 
+
+
 .hero p {
     font-size: 16px;
     line-height: 1.6;
 }
+
+
 
 .hero img {
     width: 400px;
@@ -182,15 +178,20 @@ img {
     object-fit: cover;
     border-radius: 12px;
 }
+
 .vision {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
+
+
 .vision-text {
     flex: 1;
 }
+
+
 
 .vision img {
     width: 400px;
@@ -198,11 +199,14 @@ img {
     object-fit: cover;
     border-radius: 12px;
 }
-.hero,
+
+
+
 .about-card {
     max-width: 1000px;
     margin: 30px auto;
     padding: 40px;
     background-color: #f5f5f5;
     border-radius: 15px;
+
 }
