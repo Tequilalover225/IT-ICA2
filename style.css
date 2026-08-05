@@ -390,3 +390,33 @@ body { font-family: Arial; }
     font-style: italic;
     margin-top: 10px;
 }
+<!--used AI to assist this section of code to help inclusivity on all devices-->*
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .hero,
+    .vision {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img,
+    .vision img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .hero-text,
+    .vision-text {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+    }
+}
