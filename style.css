@@ -256,6 +256,20 @@ body { font-family: Arial; }
     border-radius:10px;
 }
 
+.selected-drink{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.selected-drink img{
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
 .checkout label {
     display: block;
     font-weight: bold;
