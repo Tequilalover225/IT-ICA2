@@ -20,5 +20,27 @@
                 <li><a href="contact.html">Back to Contact Us</a></li>
             </ul>
         </nav>
+        <script>
+        // Read the data from the URL
+        const data = new URLSearchParams(window.location.search);
+
+        // Get the values from the feedback form
+        const name = data.get("name") || "there";
+        const burger = data.get("burger") || "burger";
+        const rating = data.get("rating") || "your";
+
+        // Find the paragraph with id="summary"
+        const box = document.getElementById("summary");
+
+        // Display a message
+        if (data.toString() === "") {
+            box.textContent =
+                "We appreciate your feedback and will use it to improve our burgers and service.";
+        } else {
+            box.textContent =
+                `Thank you, ${name}! We appreciate your feedback. We're happy that you enjoyed our ${burger}. Thank you for giving us a ${rating} rating!`;
+        }
+    </script>
+    </body>
 
 </html>
