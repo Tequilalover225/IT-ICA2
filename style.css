@@ -89,6 +89,97 @@ body { font-family: Arial; }
     margin: 0 auto;
 }
 
+/* about us*/
+.ingredient-image {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 67px 0 0 0;
+    border-radius: 10px;
+}
+.about-section {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+.about-us {
+    background: #e8dec8;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+.box {
+    padding: 18px;
+    background-color: #fff9e6;
+    border: 2px dotted #229ad2;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.box p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #434040;
+    margin: 0;
+}
+.about-content {
+    flex: 0 0 60%;
+}
+.about-image {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.about-image .image-caption {
+    text-align: center;
+    margin-top: 12px;
+    width: 100%;
+}
+.about-content h2 {
+    color: #2b53e5;
+    font-weight: 800;
+}
+
+/* Our vision label color */
+.sub-section .section-label {
+    color: #093aea;
+    font-weight: 700;
+}
+@media (max-width: 800px) {
+    .about-section { flex-direction: column; }
+    .about-image { order: 2; }
+}
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #484344;
+    margin-bottom: 20px;
+}
+.sub-row {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+}
+.sub-image {
+    width: 320px;
+    height: auto;
+    border-radius: 16px;
+    flex: 0 0 160px;
+    order: 2; 
+}
+.sub-row .box {
+    order: 1;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch; 
+}
+
 
 /*disclaimer for images*/
 
@@ -119,6 +210,21 @@ body { font-family: Arial; }
     transition:0.3s;
 }
 
+/* Read More / CTA button */
+.button {
+    display: inline-block;
+    margin-top: 6px; /* nudged up */
+    padding: 10px 20px;
+    background: #F2A33C;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background: #1B2A4A;
+}
+
 /* About Us text */
 .hero p,
 .about-card p {
@@ -137,9 +243,9 @@ body { font-family: Arial; }
 }
 
 /* About Us section */
-/* i used AI to assist brainstorm ideas */
+/* i used AI to assist brainstorm ideas or the section below */
 
-.hero {
+.hero { 
     display: flex;
     align-items: center;
     gap: 40px;
@@ -149,68 +255,54 @@ body { font-family: Arial; }
     background-color: #f5f5f5;
     border-radius: 15px;
 }
-
-
-
 .hero-text {
     flex: 1;
 }
-
-
-
 .hero h2 {
     font-size: 32px;
     margin-bottom: 15px;
 }
-
-
-
 .hero p {
     font-size: 16px;
     line-height: 1.6;
 }
-
-
-
 .hero img {
     width: 400px;
     height: 250px;
     object-fit: cover;
     border-radius: 12px;
 }
-
 .vision {
     display: flex;
     align-items: center;
     gap: 40px;
 }
-
-
-
 .vision-text {
     flex: 1;
 }
-
-
-
 .vision img {
     width: 400px;
     height: 250px;
     object-fit: cover;
     border-radius: 12px;
 }
-
-
-
 .about-card {
     max-width: 1000px;
     margin: 30px auto;
     padding: 40px;
     background-color: #f5f5f5;
     border-radius: 15px;
-
 }
-
+.about-card h2 {
+    color: #093aea;
+    font-weight: 700;
+}
+.section-label3 {
+    color: #093aea;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 /* ===========================
    Checkout Page
 =========================== */
@@ -360,6 +452,50 @@ body { font-family: Arial; }
     transition:0.3s;
 }
 
+/* Team section */
+.team-section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #bae1b0;
+    border-radius: 16px;
+}
+.team-row {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.team-member {
+    flex: 0 0 30%;
+    background: #ddef8f;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+.team-member h3 {
+    margin: 8px 0 4px;
+}
+.team-member p {
+    margin: 0;
+    color: #666;
+}
+@media (max-width: 800px) {
+    .team-member { flex: 0 0 48%; }
+}
+@media (max-width: 480px) {
+    .team-member { flex: 0 0 100%; }
+}
+/* i used AI to assist me with the box creation for the section above*/
+
 .checkout label {
     display: block;
     font-weight: bold;
@@ -390,33 +526,4 @@ body { font-family: Arial; }
     font-style: italic;
     margin-top: 10px;
 }
-<!--used AI to assist this section of code to help inclusivity on all devices-->*
-/* Responsive Design */
-@media (max-width: 768px) {
 
-    .hero,
-    .vision {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero img,
-    .vision img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-    }
-
-    .hero-text,
-    .vision-text {
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        width: 100%;
-    }
-}
