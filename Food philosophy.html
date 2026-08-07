@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Philosophy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e8dec8;
+            color: #1B2A4A;
+        }
+        .hero-title {
+            font-size: 4rem;
+            margin: 100px 20px 20px;
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
+        .hero-subtitle {
+            font-size: 1.25rem;
+            text-align: center;
+            color: #555;
+            margin-bottom: 60px;
+        }
+        .section-label {
+            display: block;
+            text-align: left;
+            color: #093aea;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+        .hero-body {
+            max-width: 900px;
+            margin: 16px auto 60px;
+            font-size: 1.125rem;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+        /* I used AI to assist me in the formatting of the code below */
+
+        .image-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .image-row img {
+            width: 220px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+        @media (max-width: 700px) {
+            .image-row img { width: 45%; height: auto; }
+        }
+        .section-label2 {
+            display: block;
+            text-align: center;
+            color: #093aea;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 1.25rem; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hero-title">Food Philosophy</h1>
+        <p class="hero-subtitle">How we think about food, flavor, and quality at Roshan Burgers.</p>
+    </header>
+    <main>
+        <section class="hero-body">
+            <span class="section-label">Our Approach</span>
+            <p>At Roshan Burgers we pick from the best vendors which provides balanced flavours, and consistent quality in our food.Our approach is to source responsibly, prepare simply, and let the ingredients we use  speak for themselves. We believe good food brings people together — that’s our food philosophy.</p>
+
+            <div class="image-row" aria-label="Example logo">
+                <img src="images/roshanburgers.jpg" alt="Roshan Burgers logo">
+            </div>
+        </section>
+
+        <section class="burger-section">
+            <span class="section-label2">Our Burgers</span>
+            <div class="image-row" aria-label="Our burgers">
+                <img src="images/chickenburger.jpg" alt="Chicken burger">
+                <img src="images/beefburger.jpg" alt="Beef burger">
+                <img src="images/veggieburger.jpg" alt="Veggie burger">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
